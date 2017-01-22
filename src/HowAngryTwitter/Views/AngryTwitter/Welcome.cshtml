@@ -1,0 +1,11 @@
+﻿@*
+    Al hacer un return view(); en el método Welcome del AngryTwitterController, por defecto busca un fichero .cshtml con el mismo nombre en /Views/AngryTwitter que será lo que devuelva
+*@
+
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Wecolme</h2>
+
+<p>WELCOME @ViewData["Name"] from our View Template!</p>
