@@ -6,6 +6,25 @@
     ViewData["Title"] = "How Angry Twitter";
 }
 
-<h2>Index</h2>
+<div class="jumbotron">
+    <h1>How angry are you on Twitter?</h1>
+    <p class="lead">This small tool analyzes your tweets using the Microsoft Cognitive Services and the Twitter API with Application-only authentication.</p>
 
-<p>Hello from our View Template!</p>
+    <br />
+    <br />
+    <br />
+    <br />
+
+   
+        <form id="form1" runat="server">
+        <b class="lead">Twitter username:</b>
+        <input type="text" id="username" runat="server" value="" />
+        <br />
+        <br />
+        <asp:Button Text="Submit" runat="server" OnClick="Submit" />
+        </form>
+
+        <button type="button" class="btn btn-info">Analyze my tweets</button>
+    
+</div>
+
