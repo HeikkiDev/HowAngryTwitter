@@ -15,16 +15,11 @@
     <br />
     <br />
 
-   
-        <form id="form1" runat="server">
-        <b class="lead">Twitter username:</b>
-        <input type="text" id="username" runat="server" value="" />
-        <br />
-        <br />
-        <asp:Button Text="Submit" runat="server" OnClick="Submit" />
-        </form>
-
-        <button type="button" class="btn btn-info">Analyze my tweets</button>
+        @using (Html.BeginForm())
+        {
+            <input type="text" name="username" />
+            <input type="submit"  class="btn btn-info" value="Analyze my tweets" />
+        }
     
 </div>
 
